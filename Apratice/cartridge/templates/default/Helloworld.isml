@@ -1,0 +1,61 @@
+<!--- TEMPLATENAME: Helloworld.isml --->
+
+<html>
+<header>
+
+<title>my xml file</title>
+</header>
+
+<body>
+<h1>hello my i am xml</h1>
+<iscomment>
+<isset name="y" value="${pdict.myParameter}" scope="pdict"/>
+<isprint value="${pdict.y}"/>
+</iscomment>
+<iscomment>
+<isset name="y" value="${pdict.myParameter}" scope="pdict"/>
+<isset name="x" value="1234" scope="session"/>
+
+<isset name="x" value="${1234}" scope="page"/>
+<isset name="sessionVar" value="${1}" scope = "session"/>
+<isset name="requestVar" value="${1}" scope = "request"/>
+<isset name="pageVar" value="${1}" scope = "page"/>
+</br>
+
+ ${x}
+</br>
+
+${pdict.y}
+</br>	
+${session.custom.x}
+</br>
+${session.custom.sessionVar+1}
+</br>
+${request.custom.requestVar+1}
+</br>
+${pageVar+1}
+</br>
+</iscomment>
+<iscomment>remotely include</iscomment>
+
+<isinclude url="${URLUtils.https('Getproduct-Start','pid','P0048','name','adnan')}"/> 
+	
+<iscomment>remotely include</iscomment>
+
+<iscomponent pipeline="Getproduct-Start" pid="P0048"/>
+
+
+<isslot id="search-no-hits-banner"
+description="recommendations banner for search no results page"
+context="global" />
+
+
+<iscomment>
+<isprint value="${pdict.myParameter}" />
+
+</iscomment>
+
+
+</body>
+
+</html>

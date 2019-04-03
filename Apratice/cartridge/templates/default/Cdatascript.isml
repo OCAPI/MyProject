@@ -1,0 +1,12 @@
+<!--- TEMPLATENAME: Cdatascript.isml --->
+
+<isscript>
+ 
+var customer=dw.customer.CustomerMgr.getProfile(pdict.message);
+out.print(customer.firstName);
+out.print(customer.gender);
+out.print(customer.email);
+
+
+
+</isscript>

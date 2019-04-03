@@ -1,0 +1,91 @@
+<!--- TEMPLATENAME: orderdetails.isml --->
+<isscript>
+
+ var getvalue=pdict.myProduct;
+ out.print(getvalue.orderNo + '</br> ');
+ out.print(getvalue.getTotalNetPrice() + '</br>');
+ out.print(getvalue.getShippingTotalNetPrice() + '</br>');
+ out.print(getvalue.updateTotals() + '</br>');
+ 
+ 
+ out.print('<h1>Payments Instruments</h1>');
+ 
+ var paymentinstrument=getvalue.getPaymentInstruments();
+
+
+ for(var a=0; a < paymentinstrument.length; a++)
+ {
+ 
+ out.print(paymentinstrument[a].creditCardNumber);
+ out.print(paymentinstrument[a].creditCardType + '</br>');
+ 
+  }
+  
+  
+  out.print('<h1>Get Shipments</h1>');
+   
+  var getshipments=getvalue.getShipments();
+// out.print(getshipments.ID);  
+
+ for(var a=0; a < getshipments.length; a++)
+ {
+ 
+ out.print(getshipments[a].ID);
+
+ }
+ 
+ out.print('<h1>Get aLL LINE ITEMS</h1>');
+ 
+  var getships=getvalue.getAllLineItems();
+// out.print(getshipments.ID);  
+
+ for(var a=0; a < getships.length; a++)
+ {
+ 
+ out.print(getships[a] + '</br>');
+
+ 
+ }
+ 
+  out.print('<h1>Get Gift Certificate LINE ITEMS</h1>');
+  var getcert=getvalue.getGiftCertificateLineItems();
+// out.print(getshipments.ID);  
+
+ for(var a=0; a < getcert.length; a++)
+ 
+ {
+ 
+ out.print(getcert[a] + '</br>');
+
+  }
+    out.print('<h1>Get Coupons LINE ITEMS</h1>');
+  var getcou=getvalue.getCouponLineItems();
+// out.print(getshipments.ID);  
+
+ for(var a=0; a < getcou.length; a++)
+ 
+ {
+ 
+ out.print(getcou[a] + '</br>');
+
+ }
+  out.print('<h1>Get Product LINE ITEMS</h1>');
+   var getship=getvalue.getProductLineItems();
+// out.print(getshipments.ID);  
+
+ for(var a=0; a < getship.length; a++)
+ {
+ 
+ out.print('MY Product Id is' + ' ' + getship[a].productID + '</br>');
+ out.print('MY Product Name  is' + ' ' + getship[a].productName + '</br>');
+
+ 
+ }
+ 
+ 
+ 
+
+  
+   
+ 
+ </isscript>

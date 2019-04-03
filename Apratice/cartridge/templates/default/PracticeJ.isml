@@ -1,0 +1,14 @@
+<!--- TEMPLATENAME: PracticeJ.isml --->
+<isdecorate template="account/pt_account">
+
+<script>
+
+var a='adnan';
+console.log(a);
+
+</script>
+
+
+
+
+ </isdecorate>

@@ -1,0 +1,29 @@
+##############################################
+# ISML Directory: search/
+##############################################
+simplesearch.searchtext=Enter Keyword or Item No.
+
+search.nohits.header=Search Results
+search.nohits.message=We're sorry, no products were found for your search:
+search.nohits.didyoumean=did you mean:
+search.nohits.searchlabel=Try a new search:
+search.nohits.found=We've found
+search.nohits.contenthits={0} article(s)
+search.nohits.searchtips=Search Tips
+search.nohits.tip1=If your search yielded no results, check your search terms for misspellings.
+search.nohits.tip2=Searching with fewer or more general keywords can have better results. Example: "television" will display every type of television, while "plasma television" will show only televisions of this type.
+search.nohits.tip3=Try searching other keywords as items can be referred to by several names. Example: "mp3 player" instead of "portable audio player."
+
+search.pageresults=Page:
+search.results=Results
+search.compare=Compare
+
+suggestions.result=result
+suggestions.results=results
+
+topcontenthits.yoursearch=Jump down to:
+topcontenthits.articlesfound=Articles Found ({0})
+topcontenthits.relatedarticles=Related Articles...
+topcontenthits.readmore=Read More &raquo;
+topcontenthits.viewall=View All Articles
+topcontenthits.goto=Articles Found

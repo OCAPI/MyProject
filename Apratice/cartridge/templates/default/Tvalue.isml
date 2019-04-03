@@ -1,0 +1,15 @@
+<!--- TEMPLATENAME: Tvalue.isml --->
+<html>
+<header>
+
+<title>my xml file</title>
+</header>
+
+<body>
+<h1>hello this url has some value</h1>
+${pdict.myParameter}
+
+
+</body>
+
+</html>

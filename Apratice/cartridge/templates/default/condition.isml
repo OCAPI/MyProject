@@ -1,0 +1,11 @@
+<!--- TEMPLATENAME: condition.isml --->
+
+<isset name="x" value="${1234}" scope="page"/>
+
+<isif condition="${x==1234}">
+ i am adnan 
+
+<iselse>
+sorry this is not me
+
+</isif>

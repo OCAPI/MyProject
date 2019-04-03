@@ -1,0 +1,21 @@
+<!--- TEMPLATENAME: geturl.isml --->
+<isscript>
+     var getU=pdict.myProduct.variationModel;
+     var storeattribute=getU.getProductVariationAttribute('size');
+     var getvalues=getU.getAllValues(storeattribute);
+     
+    out.print("This is the url of the products"+'</br>'); 
+     
+     for(var a=0; a< getvalues.length; a++)
+     {
+     
+       var showurl=getU.urlSelectVariationValue('Product-Show',storeattribute,
+       getvalues[a]);
+       
+       
+       out.print(showurl + '</br>');
+     }
+
+
+
+</isscript>

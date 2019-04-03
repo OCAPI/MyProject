@@ -1,0 +1,11 @@
+<!--- TEMPLATENAME: dscript.isml --->
+
+<isscript>
+
+  var ProductMgr=dw.catalog.ProductMgr;
+   var product = ProductMgr.getProduct(pdict.message);
+   out.print(product.name);
+ 
+
+</isscript>
+<isinclude url="${URLUtils.https('Getproduct-Start','pid','P0048')}"/>

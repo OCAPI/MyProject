@@ -1,0 +1,21 @@
+<!--- TEMPLATENAME: getimage.isml --->
+<isscript>
+
+     
+      var imageproduct=pdict.myProduct.getImage('medium',2);
+   
+   //  out.print(imageproduct.getAbsURL());
+   
+      
+
+    
+      
+      
+   //   <iscomment>get product name on plp</iscomment>
+//var imageproduc=pdict.myProduct.name;
+  //    out.print(imageproduc);
+
+
+ </isscript>
+      <a href="${imageproduct.getAbsURL()}">Product Image</a>
+      <img src="${imageproduct.getAbsURL()}" alt="${pdict.myProduct.name}" height='150' width='120' />

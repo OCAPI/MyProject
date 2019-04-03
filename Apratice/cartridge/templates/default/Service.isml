@@ -1,0 +1,41 @@
+<!--- TEMPLATENAME: Service.isml --->
+<html>
+<isdecorate template="account/pt_account"> 
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  
+}
+th, td {
+  padding: 15px;
+}
+</style>
+</head>
+<table>
+<tr>
+<th>City</th>
+<th>State</th>
+<th>Country</th>
+</tr>
+<tr>
+<td>${pdict.message.observations.location[0].city}</td>
+<td>${pdict.message.observations.location[0].state}</td>
+<td>${pdict.message.observations.location[0].country}</td>
+
+</tr>
+
+
+</table>
+<button type="submit" class="show">
+click
+</button>
+
+</isdecorate>
+</html>
+<iscomment>
+<script type="text/javascript"><isinclude template="resources/appresources"/></script>
+</iscomment>
+${pdict.message2}
+
+

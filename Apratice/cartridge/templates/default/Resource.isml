@@ -1,0 +1,15 @@
+<!--- TEMPLATENAME: Resource.isml --->
+<iscontent type="text/html" charset="UTF-8" compact="true" />
+
+hey my name is adnan.
+
+<isdecorate template="account/pt_account">
+
+<button type="button" class="show">click me</button>
+
+<script type="text/javascript"><isinclude template="resources/appresources"/></script>
+
+<script>
+	console.log(Urls.adnan)
+	console.log(${pdict.message})
+</script> </isdecorate>

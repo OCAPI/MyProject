@@ -1,0 +1,21 @@
+<!--- TEMPLATENAME: getOE.isml --->
+<isscript>
+
+
+ var getvalue=pdict.myProduct.variationModel;
+ var putvalue=getvalue.getProductVariationAttribute('color');
+ var model=getvalue.getAllValues(putvalue);
+
+ for(var a=0; a < model.length; a++)
+ {
+ 
+   var order=getvalue.hasOrderableVariants(putvalue,model[a]);
+ 
+   out.print(order);
+       
+ 
+ }
+
+
+
+</isscript>

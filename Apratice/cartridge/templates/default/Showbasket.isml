@@ -1,0 +1,23 @@
+<!--- TEMPLATENAME: Showbasket.isml --->
+<isdecorate template="product/pt_productdetails"> 
+<br/>
+ <isloop	items="${pdict.Basket.allProductLineItems}" var="product">	
+ 
+</br>
+<td>
+ ${product.product.ID}
+ </br>
+ ${product.product.name}
+</br>
+${product.product.}
+
+
+</td>
+
+
+ 
+ 
+ <br/>	
+ 
+ </isloop>
+ </isdecorate>

@@ -1,0 +1,21 @@
+
+<!--- TEMPLATENAME: helloform.isml --->
+<iscontent type="text/html" charset="UTF-8" compact="true" />
+<!doctype html>
+<head></head>
+<body>
+<h1>Hello World Form Result</h1>
+<p>Thank you for entering: </p>
+
+  ${pdict.CurrentForms.helloform.email.label}
+ 
+ ${pdict.CurrentForms.helloform.email.value}
+ </br>
+  ${pdict.CurrentForms.helloform.password.label}
+ 
+ ${pdict.CurrentForms.helloform.password.value}
+ 
+ 
+ </p>
+</body>
+</html>

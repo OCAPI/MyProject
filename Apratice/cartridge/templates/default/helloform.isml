@@ -1,0 +1,29 @@
+<!--- TEMPLATENAME: helloform.isml --->
+<iscontent type="text/html" charset="UTF-8" compact="true" />
+<isdecorate template="account/pt_account">
+<isinclude template="util/modules"/> 
+
+
+
+<form action="${URLUtils.httpsContinue()}" method="post" class="form-horizontal" id="HelloForm">
+	<fieldset>
+		
+		<isinputfield formfield="${pdict.CurrentForms.helloform.email}" type="input"/>
+		 <isinputfield formfield="${pdict.CurrentForms.helloform.password}" type="input"/>
+		
+		
+
+	</fieldset>
+	<fieldset>
+	<div class="form-row form-row-button">
+			<button type="submit"  value="${Resource.msg('global.apply','locale',null)}" name="${pdict.CurrentForms.helloform.submit.htmlName}">
+			 ${Resource.msg('global.apply','locale',null)}
+			</button>
+			<button type="cancel" value="${Resource.msg('global.cancel','locale',null)}" name="${pdict.CurrentForms.helloform.cancel.htmlName}">
+				"${Resource.msg('global.cancel','locale',null)}"
+			</button>
+				
+				</div>
+	</fieldset>
+</form>
+</isdecorate>

@@ -1,0 +1,75 @@
+<!--- TEMPLATENAME: getP.isml --->
+<iscomment> 
+//${pdict.myProduct.master};
+<isscript> 
+ var getprice=pdict.myProduct.priceModel;
+ var getvalue=getprice.isPriceRange(getprice.priceInfo.priceBook.ID);
+ out.print(getvalue);
+ 
+</isscript>
+</iscomment>
+<iscomment>this is for get first product varints in pricebook</iscomment>
+<iscomment> 
+<isscript>
+
+
+ var getprice=pdict.myProduct.variationModel;
+ var getvalue=getprice.variants;
+ for(var a=0; a < 1; a++)
+ {
+ out.print(getvalue[0].ID + ' </br> ');
+ }
+ 
+
+
+</isscript>
+</iscomment>
+<iscomment>
+<isscript>
+
+
+ var getprice=pdict.myProduct.isOptionProduct();
+ out.print(getprice);
+
+ 
+
+
+</isscript>
+</iscomment>
+<iscomment>
+<isscript>
+
+
+ var getprice=pdict.myProduct.getPriceModel().getPrice();
+ out.print(getprice);
+
+ 
+
+
+</isscript>
+</iscomment>
+<isscript>
+
+
+ var getprice=pdict.myProduct.priceModel.getPrice();
+ out.print(getprice);
+
+ 
+
+
+</isscript>
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+ 
